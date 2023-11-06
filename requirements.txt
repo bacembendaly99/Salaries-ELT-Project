@@ -1,1 +1,11 @@
-# Python Requirements Placeholder 
+pandas
+numpy
+matplotlib
+seaborn
+jupyter
+sqlalchemy
+psycopg2-binary
+requests
+dbt-core
+dbt-postgres
+selenium
