@@ -13,4 +13,5 @@ def download_dataset(url: str, path: str) -> None:
 
 if __name__ == "__main__":
     dataset_url = 'https://ai-jobs.net/salaries/download/salaries.csv' 
+    file_path = './data/ExtractedSalaries.csv'  
     download_dataset(dataset_url, file_path)
