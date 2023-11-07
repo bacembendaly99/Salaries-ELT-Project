@@ -8,4 +8,4 @@ psycopg2-binary
 requests
 dbt-core
 dbt-postgres
-selenium
+dbt
