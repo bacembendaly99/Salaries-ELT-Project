@@ -1,0 +1,15 @@
+
+agc:
+  outputs:
+    dev:
+      type: postgres
+      threads: 8
+      host: localhost
+      user: postgres
+      pass: 1234
+      port: 5432
+      dbname: salaries_dbt_project
+      schema: salaries_dbt_project
+  target: dev
+
+
