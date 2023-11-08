@@ -65,4 +65,75 @@ models:
           - accepted_values:
               values: ['less than 50 employees', '50 to 250 employees', 'more than 250 employees']
 
-      
+  - name: stg_salaries_with_country_names
+    description: "Enhances the salaries data with full country names for employee residence and company location."
+    columns:
+      - name: work_year
+        description: "The year of the work data."
+        tests:
+          - not_null
+          
+
+      - name: job_title
+        description: "The title of the job."
+        tests:
+          - not_null
+
+      - name: salary
+        description: "The salary for the job."
+        tests:
+          - not_null
+
+      - name: salary_currency
+        description: "The currency of the salary."
+        tests:
+          - not_null
+
+      - name: salary_in_usd
+        description: "The salary converted to USD."
+        tests:
+          - not_null
+
+      - name: employee_residence
+        description: "Country of residence of the employee, transformed to full country name."
+        tests:
+          - not_null
+          - country_name_exists:
+              column_name: 'employee_residence'
+
+      - name: company_location
+        description: "Location of the company, transformed to full country name."
+        tests:
+          - not_null
+          - country_name_exists:
+              column_name: 'company_location'
+
+      - name: experience_level
+        description: "The experience level of the job."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Entry-level / Junior', 'Mid-level / Intermediate', 'Senior-level / Expert', 'Executive-level / Director']
+
+      - name: employment_type
+        description: "The type of employment."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Part-time', 'Full-time', 'Contract', 'Freelance']
+
+      - name: remote_ratio
+        description: "The ratio of remote work possible for the job."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['No remote work', 'Partially remote/hybrid', 'Fully remote']
+
+      - name: company_size
+        description: "The size of the company."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['less than 50 employees', '50 to 250 employees', 'more than 250 employees']
+
+

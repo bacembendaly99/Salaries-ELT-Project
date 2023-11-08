@@ -9,19 +9,19 @@ models:
         tests:
           - not_null
           
-      - name: experience_level_label
+      - name: experience_level
         description: "The translated label for the experience level."
         tests:
           - not_null
-      - name: employment_type_label
+      - name: employment_type
         description: "The translated label for the type of employment."
         tests:
           - not_null
-      - name: remote_ratio_label
+      - name: remote_ratio
         description: "The translated label for the remote work ratio."
         tests:
           - not_null
-      - name: company_size_label
+      - name: company_size
         description: "The translated label for the company size."
         tests:
           - not_null
