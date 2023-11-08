@@ -1,0 +1,183 @@
+[0m10:51:56.810146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E285D8E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E2B08A760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E2B08AB50>]}
+
+
+============================== 10:51:56.823135 | bdc8e45e-a751-4210-8ebd-b05294a4b10a ==============================
+[0m10:51:56.823135 [info ] [MainThread]: Running with dbt=1.7.1
+[0m10:51:56.824121 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\benda\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt init salaries', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:51:56.827121 [debug] [MainThread]: Starter project path: c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\include\starter_project
+[0m10:51:56.898051 [info ] [MainThread]: 
+Your new dbt project "salaries" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:51:56.899806 [info ] [MainThread]: Setting up your profile.
+[0m10:54:07.375505 [error] [MainThread]: Encountered an error:
+
+[0m10:54:07.380311 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\cli\requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\cli\requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\cli\main.py", line 515, in init
+    results = task.run()
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\task\init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\task\init.py", line 244, in ask_for_adapter_choice
+    numeric_choice = click.prompt(prompt_msg, type=click.INT)
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:54:07.387311 [debug] [MainThread]: Command `dbt init` failed at 10:54:07.386313 after 130.66 seconds
+[0m10:54:07.387311 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E285D8E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E2B0DB4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027E2B0DBF70>]}
+[0m10:54:07.388307 [debug] [MainThread]: Flushing usage events
+[0m10:54:26.867613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292DBB58A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292DB4A81F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292DE62ACD0>]}
+
+
+============================== 10:54:26.871665 | 1193f35b-cac2-4f07-9d9e-3d6b2bc028f4 ==============================
+[0m10:54:26.871665 [info ] [MainThread]: Running with dbt=1.7.1
+[0m10:54:26.872625 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\benda\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init dbt', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m10:54:49.241762 [debug] [MainThread]: Starter project path: c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\lib\site-packages\dbt\include\starter_project
+[0m10:54:49.275348 [info ] [MainThread]: 
+Your new dbt project "dbt_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:54:49.277354 [info ] [MainThread]: Setting up your profile.
+[0m10:56:23.515905 [info ] [MainThread]: Profile dbt_project written to C:\Users\benda\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m10:56:23.517901 [debug] [MainThread]: Command `dbt init` succeeded at 10:56:23.517901 after 116.70 seconds
+[0m10:56:23.518902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292DBB58A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292D8B919D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000292DE7651C0>]}
+[0m10:56:23.519903 [debug] [MainThread]: Flushing usage events
+[0m10:56:37.797640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243F7F68B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FAA39670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FAA39250>]}
+
+
+============================== 10:56:37.800640 | d81f2fa6-a8ca-4ef0-8ba0-83d7b344eea6 ==============================
+[0m10:56:37.800640 [info ] [MainThread]: Running with dbt=1.7.1
+[0m10:56:37.801640 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\benda\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m10:56:37.802643 [info ] [MainThread]: dbt version: 1.7.1
+[0m10:56:37.803640 [info ] [MainThread]: python version: 3.9.13
+[0m10:56:37.804649 [info ] [MainThread]: python path: c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\Scripts\python.exe
+[0m10:56:37.805641 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m10:56:37.895648 [info ] [MainThread]: Using profiles dir at C:\Users\benda\.dbt
+[0m10:56:37.897645 [info ] [MainThread]: Using profiles.yml file at C:\Users\benda\.dbt\profiles.yml
+[0m10:56:37.897645 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\dbt_project.yml
+[0m10:56:37.899241 [info ] [MainThread]: Configuration:
+[0m10:56:37.900249 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m10:56:37.901246 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:56:37.902251 [info ] [MainThread]: Required dependencies:
+[0m10:56:37.903247 [debug] [MainThread]: Executing "git --help"
+[0m10:56:37.948853 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:56:37.949779 [debug] [MainThread]: STDERR: "b''"
+[0m10:56:37.950780 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:56:37.951777 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m10:56:37.953496 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m10:56:37.955658 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "agc", target "dev" invalid: ['salaries_dbt_project'] is not of type 'string'
+
+
+[0m10:56:37.957788 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\dbt_project.yml> not found
+
+[0m10:56:37.959906 [debug] [MainThread]: Command `dbt debug` failed at 10:56:37.959906 after 0.21 seconds
+[0m10:56:37.962240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243F7F68B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243FAB977F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000243F9EB3DC0>]}
+[0m10:56:37.963235 [debug] [MainThread]: Flushing usage events
+[0m10:58:59.278146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C70D8B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C99896A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C9989280>]}
+
+
+============================== 10:58:59.282477 | 17faab54-eb63-44a9-9246-9cd8e3aec57a ==============================
+[0m10:58:59.282477 [info ] [MainThread]: Running with dbt=1.7.1
+[0m10:58:59.283477 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\benda\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:58:59.284477 [info ] [MainThread]: dbt version: 1.7.1
+[0m10:58:59.285487 [info ] [MainThread]: python version: 3.9.13
+[0m10:58:59.285487 [info ] [MainThread]: python path: c:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\.venv\Scripts\python.exe
+[0m10:58:59.286477 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m10:58:59.378157 [info ] [MainThread]: Using profiles dir at C:\Users\benda\.dbt
+[0m10:58:59.380158 [info ] [MainThread]: Using profiles.yml file at C:\Users\benda\.dbt\profiles.yml
+[0m10:58:59.380158 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\dbt_project.yml
+[0m10:58:59.390486 [info ] [MainThread]: adapter type: postgres
+[0m10:58:59.391479 [info ] [MainThread]: adapter version: 1.7.1
+[0m10:58:59.392472 [info ] [MainThread]: Configuration:
+[0m10:58:59.393473 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:58:59.394472 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m10:58:59.395471 [info ] [MainThread]: Required dependencies:
+[0m10:58:59.395471 [debug] [MainThread]: Executing "git --help"
+[0m10:58:59.444575 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:58:59.445577 [debug] [MainThread]: STDERR: "b''"
+[0m10:58:59.447574 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:58:59.449744 [info ] [MainThread]: Connection:
+[0m10:58:59.451329 [info ] [MainThread]:   host: localhost
+[0m10:58:59.452335 [info ] [MainThread]:   port: 5432
+[0m10:58:59.453344 [info ] [MainThread]:   user: postgres
+[0m10:58:59.455338 [info ] [MainThread]:   database: salaries_dbt_project
+[0m10:58:59.456336 [info ] [MainThread]:   schema: public
+[0m10:58:59.457339 [info ] [MainThread]:   connect_timeout: 10
+[0m10:58:59.458338 [info ] [MainThread]:   role: None
+[0m10:58:59.459335 [info ] [MainThread]:   search_path: None
+[0m10:58:59.460394 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:58:59.465591 [info ] [MainThread]:   sslmode: None
+[0m10:58:59.466590 [info ] [MainThread]:   sslcert: None
+[0m10:58:59.469600 [info ] [MainThread]:   sslkey: None
+[0m10:58:59.471587 [info ] [MainThread]:   sslrootcert: None
+[0m10:58:59.473588 [info ] [MainThread]:   application_name: dbt
+[0m10:58:59.474592 [info ] [MainThread]:   retries: 1
+[0m10:58:59.478590 [info ] [MainThread]: Registered adapter: postgres=1.7.1
+[0m10:58:59.481802 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:58:59.482816 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:58:59.486818 [debug] [MainThread]: On debug: select 1 as id
+[0m10:58:59.486818 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:58:59.537612 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m10:58:59.538612 [debug] [MainThread]: On debug: Close
+[0m10:58:59.539609 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:58:59.540614 [info ] [MainThread]: [31m1 check failed:[0m
+[0m10:58:59.541614 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\dbt_project.yml> not found
+
+[0m10:58:59.543613 [debug] [MainThread]: Command `dbt debug` failed at 10:58:59.543613 after 0.32 seconds
+[0m10:58:59.543613 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:58:59.544613 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C70D8B80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C9AF7040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000188C9AF7070>]}
+[0m10:58:59.545611 [debug] [MainThread]: Flushing usage events
+[0m11:02:21.146676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E18A98F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E1B3474F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E1B347940>]}
+
+
+============================== 11:02:21.149689 | bddc6893-a8b0-46e3-a89d-4933f7c15201 ==============================
+[0m11:02:21.149689 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:02:21.150911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\benda\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:02:21.151922 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\benda\OneDrive\Desktop\Salaries-ETL-Project\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:02:21.153943 [debug] [MainThread]: Command `dbt run` failed at 11:02:21.152919 after 0.06 seconds
+[0m11:02:21.154155 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E18A98F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E1B372730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024E1B350A30>]}
+[0m11:02:21.155414 [debug] [MainThread]: Flushing usage events

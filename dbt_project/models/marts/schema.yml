@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: mart_average_salaries
+    description: "Aggregated average salaries by job title and other dimensions."
+    columns:
+      - name: job_title
+        description: "The role worked in during the year."
+        tests:
+          - not_null
+          
+      - name: experience_level_label
+        description: "The translated label for the experience level."
+        tests:
+          - not_null
+      - name: employment_type_label
+        description: "The translated label for the type of employment."
+        tests:
+          - not_null
+      - name: remote_ratio_label
+        description: "The translated label for the remote work ratio."
+        tests:
+          - not_null
+      - name: company_size_label
+        description: "The translated label for the company size."
+        tests:
+          - not_null
+      - name: average_salary_usd
+        description: "The average salary for the group in USD."
+        tests:
+          - not_null
+  
+      - name: number_of_salaries
+        description: "The count of salaries in each grouping."
+        tests:
+          - not_null

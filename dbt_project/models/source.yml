@@ -1,0 +1,10 @@
+# models/sources.yml
+
+version: 2
+
+sources:
+  - name: salaries_source  # This is a logical name for your source dataset
+    database: salaries_dbt_project  # The actual name of your database
+    schema: public  # The name of the schema where your raw data tables reside
+    tables:
+      - name: salaries  # The actual table name containing the raw salary data

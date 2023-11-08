@@ -1,0 +1,68 @@
+# models/staging/schema.yml
+
+version: 2
+
+models:
+  - name: stg_salaries
+    description: "Staging table for salary data with descriptive labels."
+    columns:
+      - name: work_year
+        tests:
+          - not_null
+          
+        
+      - name: experience_level
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Entry-level / Junior', 'Mid-level / Intermediate', 'Senior-level / Expert', 'Executive-level / Director']
+
+      - name: employment_type
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Part-time', 'Full-time', 'Contract', 'Freelance']
+
+      - name: job_title
+        tests:
+          - not_null
+          
+
+      - name: salary
+        tests:
+          - not_null
+          
+
+      - name: salary_currency
+        tests:
+          - not_null
+          
+
+      - name: salary_in_usd
+        tests:
+          - not_null
+          
+
+      - name: employee_residence
+        tests:
+          - not_null
+          
+
+      - name: remote_ratio
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Fully remote', 'Partially remote/hybrid', 'No remote work']
+
+      - name: company_location
+        tests:
+          - not_null
+          
+
+      - name: company_size
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['less than 50 employees', '50 to 250 employees', 'more than 250 employees']
+
+      

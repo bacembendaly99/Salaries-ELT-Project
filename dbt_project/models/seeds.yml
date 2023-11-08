@@ -1,0 +1,19 @@
+# seeds/seeds.yml
+
+version: 2
+
+seeds:
+  - name: iso_country_codes
+    path: iso-country-codes.csv
+    description: "A seed file containing mappings of ISO country codes to full country names."
+    columns:
+      - name: code
+        description: "ISO 3166 country code"
+        tests:
+          - unique
+          - not_null
+      - name: country_name
+        description: "The full country name corresponding to the ISO code"
+        tests:
+          - unique
+          - not_null
