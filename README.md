@@ -1,7 +1,7 @@
-# Salaries-ETL
+# Salaries-ELT
 
 ## About
-Salaries-ETL is a comprehensive ELT (Extract, Load, Transform) pipeline that manages job salary data. The pipeline is designed to extract data from CSV files, load it into a Dockerized PostgreSQL database, and perform transformations using dbt (data build tool).
+Salaries-ELT is a comprehensive ELT (Extract, Load, Transform) pipeline that manages job salary data. The pipeline is designed to extract data from CSV files, load it into a Dockerized PostgreSQL database, and perform transformations using dbt (data build tool).
 
 ## Project Architecture
 The project is structured into several key directories:
