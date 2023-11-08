@@ -32,6 +32,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbt_project:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+     staging: # This is the resource path for staging models
+      +materialized: view # Staging models will be materialized as views
+      
+     mart: # This is the resource path for mart models
+      +materialized: view # Mart models will be materialized as tables
+      
